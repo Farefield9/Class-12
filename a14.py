@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as pl
 a = pd.DataFrame({'eng':[52,48,69,70],'ip':[98,85,94,81],'geo':[85,88,78,91],'total':[235,221,241,242]}, index = ['k','n','p','t'])
 b = a[a['total']>240]
 print(b.loc[:,['eng','geo']])
